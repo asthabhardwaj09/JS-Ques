@@ -14,18 +14,18 @@ console.log(b);
 
 //example of every method
 
-// let arr=[8,2,6,4]
-// let result=arr.every(a=> a%2==0)
-// console.log(result);
+let arr=[8,2,6,4]
+let result=arr.some(a=> a%2==0)
+console.log(result);
 
-const arr=[1,2,3,4,4]
-console.log(typeof arr);
-const isarr=Array.isArray(arr)
-console.log(isarr);
+// const arr=[1,2,3,4,4]
+// console.log(typeof arr);
+// const isarr=Array.isArray(arr)
+// console.log(isarr);
 
-const str="asha".toUpperCase
-// str.length
-console.log(str);
+// const str="asha".toUpperCase
+// // str.length
+// console.log(str);
 
-console.log(typeof str);
-// console.log(typeof strs);
+// console.log(typeof str);
+// // console.log(typeof strs);
