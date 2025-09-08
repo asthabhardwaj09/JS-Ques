@@ -34,3 +34,9 @@ console.log(obj2.a);
 // console.log(obj1);
 // console.log(obj2);
 
+//-----------------
+
+let arr=[1,2,3,4]
+let checkarr= arr.includes(7)
+console.log(checkarr);
+

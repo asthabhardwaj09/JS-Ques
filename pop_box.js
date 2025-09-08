@@ -18,3 +18,6 @@ if(answer === "yes" || answer === "y") {
   console.log("User pressed Cancel");
 }
 
+console.log("This is an alert box!");
+
+
