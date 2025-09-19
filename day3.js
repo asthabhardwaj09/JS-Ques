@@ -45,3 +45,21 @@ for(i=0; i<maxlength; i++){
     }
 }
 console.log(final);
+
+//-------------
+
+if([]){
+    console.log("absent");
+    
+}
+else{
+    console.log("present");
+}
+
+let obj={
+    a:{
+        b:undefined
+    }
+} 
+
+console.log(obj.a?.b?.c?.d??"astha");
