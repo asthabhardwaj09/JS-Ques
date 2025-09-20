@@ -1,10 +1,10 @@
-// for (var i = 1; i <= 3; i++) {
-//   setTimeout(() => {
-//     console.log(i);
-//   }, i * 1000);
-// }
+for (var i = 1; i <= 3; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, i * 1000);
+}
 
-//closure code
+// closure code
 
 function names(){
     let hername = "ravita"   // yaha local rakha
