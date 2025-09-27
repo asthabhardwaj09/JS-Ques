@@ -27,6 +27,7 @@ var username2= "Ravita Gautam"
 
 let username3= "Mukul Kushwaha"
 
+//Arrow func
 let obj1={
     student_name:"astha",
     email:"astha@example.com",
@@ -42,6 +43,8 @@ const three=(obj1)=>{
 
 three(obj1)
 
+
+//normal func
 let obj2={
     website:"chatgpt",
     purpose:"study",
@@ -58,3 +61,25 @@ obj2.four()
 // function(){
     
 // }
+
+
+const obj = {
+  name: "Astha",
+  
+  // Normal function inside setTimeout
+  normalMethod: function () {
+    setTimeout(function () {
+      console.log("Normal:", this.name);
+    }, 1000);
+  },
+
+  // Arrow function inside setTimeout
+  arrowMethod: function () {
+    setTimeout(() => {
+      console.log("Arrow:", this.name);
+    }, 1000);
+  }
+};
+
+obj.normalMethod(); // Normal: undefined (or window in browser)
+obj.arrowMethod();  // Arrow: Astha
