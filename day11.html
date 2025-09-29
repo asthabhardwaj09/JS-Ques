@@ -1,0 +1,20 @@
+<!-- event bubbling -->
+
+
+<body id="color">
+  <button>Click to change color</button>
+
+  <script>
+    const body = document.getElementById("color");
+    const colors = ["red", "blue", "green", "yellow", "purple", "pink"];
+    let index = 0;
+
+    body.addEventListener("click", (e) => {
+      if (e.target.tagName === "BUTTON") { // bubbling from button → body
+        body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+      }
+    });
+  </script>
+</body>
+
