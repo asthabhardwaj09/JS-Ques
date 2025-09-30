@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>astha</li>
+        <li>aditi</li>
+        <li>akshansh</li>
+    </ul>
+    <ol id="school">
+        <li id="first">LFS</li>
+        <li>BIT</li>
+        <li>GMA</li>
+    </ol>
+
+<script>
+  const school = document.getElementById("school");
+  const firstLi = document.getElementById("first");
+
+  // remove the first child <li>
+  school.removeChild(firstLi);
+</script>
+<script>
+    document.getElementById("list").addEventListener('click',function(e){
+        console.log(e.altKey)
+    })
+</script>
+
+</html>

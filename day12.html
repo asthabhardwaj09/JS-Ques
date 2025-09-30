@@ -1,20 +1,15 @@
 <!-- Event Delegation -->
 
-<body id="color">
-  <button data-color="cycle">Click to change colors</button>
-  <script>
-    const body = document.getElementById("color");
-    const colors = ["red", "blue", "green", "yellow", "purple", "pink"];
-    let index = 0;
+<ul id="list">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Mango</li>
+</ul>
 
-    body.addEventListener("click", (e) => {
-      if (e.target.tagName === "BUTTON") {
-        if (e.target.dataset.color === "cycle") {
-          // cycle colors
-          body.style.backgroundColor = colors[index];
-          index = (index + 1) % colors.length;
-        }
-      }
-    });
-  </script>
-</body>
+<script>
+document.getElementById("list").addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    console.log("You clicked:", e.target.textContent);
+  }
+});
+</script>

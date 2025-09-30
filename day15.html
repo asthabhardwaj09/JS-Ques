@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Properties Demo</title>
+  <style>
+    #box {
+      width: 300px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 50px;
+      text-align: center;
+      line-height: 200px;
+      font-size: 20px;
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">Hover or Click Me</div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    // Mouse move example → clientX/clientY, screenX/screenY
+    box.addEventListener("mousemove", function(e) {
+      console.log("clientX:", e.clientX, "clientY:", e.clientY); // viewport position
+      console.log("screenX:", e.screenX, "screenY:", e.screenY); // screen position
+    });
+
+    // Mouse over/out example → toElement
+    box.addEventListener("mouseout", function(e) {
+      console.log("Mouse moved out of box → toElement:", e.toElement);
+    });
+
+    // Click example
+    box.addEventListener("click", function(e) {
+      console.log("Clicked target:", e.target);
+      console.log("Current Target:", e.currentTarget);
+    });
+  </script>
+</body>
+</html>

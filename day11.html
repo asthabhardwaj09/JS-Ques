@@ -1,20 +1,18 @@
 <!-- event bubbling -->
 
 
-<body id="color">
-  <button>Click to change color</button>
+<div id="parent">
+  <button id="child">Click me</button>
+</div>
 
-  <script>
-    const body = document.getElementById("color");
-    const colors = ["red", "blue", "green", "yellow", "purple", "pink"];
-    let index = 0;
+<script>
+document.getElementById("child").addEventListener("click", (e) => {
+  console.log("Child clicked");
+  e.stopPropagation()
+  
+});
 
-    body.addEventListener("click", (e) => {
-      if (e.target.tagName === "BUTTON") { // bubbling from button → body
-        body.style.backgroundColor = colors[index];
-        index = (index + 1) % colors.length;
-      }
-    });
-  </script>
-</body>
-
+document.getElementById("parent").addEventListener("click", () => {
+  console.log("Parent clicked (because event bubbled up)");
+});
+</script>
