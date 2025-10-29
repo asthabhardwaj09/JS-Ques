@@ -16,14 +16,6 @@ console.log(`obj1 value ${obj1.Username}, obj2 value ${obj2.email}`);
 
 
 
-const instaUser={
 
-}
-
-instaUser.Username="_theastha"
-instaUser.email='astha'
-
-
-console.log(instaUser);
 
 
