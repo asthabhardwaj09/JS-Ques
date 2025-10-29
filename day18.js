@@ -17,3 +17,11 @@ console.log((name||name2)??(name3??name4));
 // ?? → Nullish coalescing
 
 // || → Logical OR
+
+
+let check=null
+let checks= undefined
+let result= check??checks
+console.log(result);
+
+
